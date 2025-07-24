@@ -1,9 +1,43 @@
-# Proyecto_servicios_internet
-#include <iostream>
-#include <string>
-#include <vector>
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-int main(){
-cout<<"Hola mundo"<<endl;
-return 0;
-}
+#include <QMainWindow>
+#include <QLineEdit>
+#include <QComboBox>
+#include <QDateEdit>
+#include <QPushButton>
+#include <QTableWidget>
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+
+private slots:
+    void agregarRegistro();
+    void eliminarRegistro();
+    void editarRegistro();
+    void limpiarCampos();
+
+private:
+    QLineEdit *txtId;
+    QLineEdit *txtNombre;
+    QLineEdit *txtDireccion;
+    QLineEdit *txtEmail;
+    QComboBox *cmbPlan;
+    QDateEdit *dateInicio;
+    QComboBox *cmbEstado;
+    QComboBox *cmbPrecio;
+
+    QPushButton *btnGuardar;
+    QPushButton *btnEliminar;
+    QPushButton *btnActualizar;
+    QPushButton *btnLimpiar;
+
+    QTableWidget *tabla;
+};
+
+#endif
