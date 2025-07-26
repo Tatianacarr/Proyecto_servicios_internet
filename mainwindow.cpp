@@ -4,7 +4,9 @@
 #include <QHBoxLayout>
 #include <QHeaderView>
 #include <QMessageBox>
-
+//Angui Fierro
+//Karen Lozano
+//Sebastian Toapanta
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
