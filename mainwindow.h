@@ -7,6 +7,8 @@
 #include <QPushButton>
 #include <QTableWidget>
 
+//Hola mundo 
+//Karen Lozano
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
